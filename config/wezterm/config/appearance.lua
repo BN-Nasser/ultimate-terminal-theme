@@ -28,7 +28,7 @@ return {
 
    -- tab bar
    enable_tab_bar = true,
-   use_fancy_tab_bar = false,
+   use_fancy_tab_bar = true,
    tab_max_width = 999,
    tab_bar_at_bottom = false,
    hide_tab_bar_if_only_one_tab = false,
@@ -56,7 +56,7 @@ return {
    window_close_confirmation = 'NeverPrompt',
    window_frame = {
       active_titlebar_bg = '#090909',
-      font_size = 14.5,
+      font_size = 12.0,
    },
    
    inactive_pane_hsb = {
