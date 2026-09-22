@@ -11,7 +11,9 @@ $directory\
 $git_branch$git_status\
 [](fg:#98971a bg:#689d6a)\
 $nodejs\
-[](fg:#689d6a bg:#d79921)\
+[](fg:#689d6a bg:#8f3f71)\
+$conda\
+[](fg:#8f3f71 bg:#d79921)\
 ${custom.python}\
 [](fg:#d79921 bg:#cc241d)\
 $docker_context\
@@ -90,3 +92,9 @@ format = "$output "
 variable = "STARSHIP_RANDOM_ARROW"
 default = "╰─❯"
 format = "$env_value "
+
+[conda]
+symbol = '🅒 '
+style = "fg:#ffffff bg:#8f3f71"
+format = '[ $symbol$environment ]($style)'
+ignore_base = false
