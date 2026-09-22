@@ -19,8 +19,8 @@ This repository comes with an automated installation script designed for **Ubunt
 
 ### One-Command Install
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-cd YOUR-REPO-NAME
+git clone https://github.com/BN-Nasser/ultimate-terminal-theme.git
+cd ultimate-terminal-theme
 chmod +x install.sh
 ./install.sh
 ```
