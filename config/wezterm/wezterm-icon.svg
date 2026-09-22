@@ -1,0 +1,36 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with Ubuntu/Catppuccin Gradient -->
+  <rect width="512" height="512" rx="120" fill="url(#bg_gradient)"/>
+  
+  <!-- Subtle Inner Glow -->
+  <rect x="10" y="10" width="492" height="492" rx="110" stroke="white" stroke-opacity="0.1" stroke-width="4"/>
+  
+  <!-- Glossy Glass Effect Overlay -->
+  <path d="M120 0H392C458.274 0 512 53.7258 512 120V200C512 266.274 256 350 120 300C0 250 0 120 0 120C0 53.7258 53.7258 0 120 0Z" fill="white" fill-opacity="0.05"/>
+
+  <!-- Glowing Terminal Prompt Symbol -->
+  <g filter="url(#glow)">
+    <path d="M140 160L260 256L140 352" stroke="#00FFCC" stroke-width="50" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="280" y="325" width="110" height="30" rx="15" fill="#00FFCC"/>
+  </g>
+
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg_gradient" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4E1E40"/>
+      <stop offset="1" stop-color="#1E0616"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow" x="100" y="120" width="350" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="0"/>
+      <feGaussianBlur stdDeviation="15"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0.8 0 0 0 0.6 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+</svg>
